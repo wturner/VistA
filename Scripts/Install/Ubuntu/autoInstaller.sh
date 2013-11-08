@@ -34,7 +34,7 @@ pip install -U selenium
 
 # Clone repos
 cd /usr/local/src
-git clone https://github.com/OSEHRA/VistA
+git clone https://github.com/wturner/VistA
 git clone https://github.com/OSEHRA/VistA -b dashboard VistA-Dashboard
 
 # bootstrap the system
