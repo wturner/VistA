@@ -28,6 +28,9 @@ test -d /home/foia/g &&
 
 # extra utils - used for cmake and dashboards and initial clones
 apt-get install -y build-essential cmake-curses-gui git
+apt-get install -y python-pip
+apt-get install -y firefox
+pip install -U selenium
 
 # Clone repos
 cd /usr/local/src
@@ -48,6 +51,7 @@ cd GTM
 # Modify the Vagrant user to be able to use the VistA instance
 # add vagrant user to foia group
 adduser vagrant foia
+sudo su vagrant
 
 # source env script during vagrant login
 echo "source /home/foia/etc/env" >> /home/vagrant/.bashrc
